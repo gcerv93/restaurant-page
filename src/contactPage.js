@@ -1,10 +1,7 @@
-import { createHeader, createFooter } from './mainPage.js';
+import { createFooter } from './mainPage.js';
 
 const contactPage = () => {
   const content = document.querySelector('#content');
-
-  content.appendChild(createHeader());
-  document.querySelector('#contact').classList.add('active');
 
   const centerDiv = document.createElement('div');
   centerDiv.classList.add('center-contact');

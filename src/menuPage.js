@@ -1,4 +1,4 @@
-import { createHeader, createFooter } from './mainPage.js';
+import { createFooter } from './mainPage.js';
 import Pozole from './images/pozole.jpg'
 import Tacos from './images/tacos.jpg'
 import Torta from './images/torta.jpg'
@@ -25,10 +25,6 @@ const createMenuItem = (imageSrc, desc, price) => {
 
 const menuPage = () => {
   const content = document.querySelector('#content');
-
-  content.appendChild(createHeader());
-  const menuTab = document.querySelector('#menu');
-  menuTab.classList.add('active');
 
   const centerDiv = document.createElement('div');
   centerDiv.classList.add('menu');

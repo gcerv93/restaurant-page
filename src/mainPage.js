@@ -78,11 +78,9 @@ const createFooter = () => {
 function mainPage() {
   const content = document.querySelector('#content');
 
-  const header = createHeader();
   const center = createCenterDiv();
   const footer = createFooter();
 
-  content.appendChild(header);
   content.appendChild(center);
   content.appendChild(footer);
 
