@@ -1,3 +1,5 @@
-import mainPage from './mainPage.js';
+import {mainPage} from './mainPage.js';
+import menuPage from './menuPage.js';
 
-mainPage();
+// mainPage();
+menuPage();

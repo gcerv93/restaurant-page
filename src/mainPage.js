@@ -1,4 +1,4 @@
-import Icon from './github.svg';
+import Icon from './images/github.svg';
 
 const createTabs = () => {
   const tabs = document.createElement('div');
@@ -10,13 +10,16 @@ const createTabs = () => {
 
   homeTab.textContent = 'Home';
   homeTab.classList.add('tab');
+  homeTab.setAttribute('id', 'home');
   homeTab.classList.add('active');
 
   menuTab.textContent = 'Menu';
   menuTab.classList.add('tab');
+  menuTab.setAttribute('id', 'menu');
 
   contactTab.textContent = 'Contact Us';
   contactTab.classList.add('tab');
+  contactTab.setAttribute('id', 'contact');
 
   tabs.appendChild(homeTab);
   tabs.appendChild(menuTab);
@@ -86,4 +89,4 @@ function mainPage() {
   return content;
 };
 
-export default mainPage;
+export { mainPage, createHeader, createFooter };
