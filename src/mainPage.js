@@ -1,9 +1,36 @@
 import Icon from './github.svg';
 
+const createTabs = () => {
+  const tabs = document.createElement('div');
+  tabs.classList.add('tabs');
+
+  const homeTab = document.createElement('div');
+  const menuTab = document.createElement('div');
+  const contactTab = document.createElement('div');
+
+  homeTab.textContent = 'Home';
+  homeTab.classList.add('tab');
+  homeTab.classList.add('active');
+
+  menuTab.textContent = 'Menu';
+  menuTab.classList.add('tab');
+
+  contactTab.textContent = 'Contact Us';
+  contactTab.classList.add('tab');
+
+  tabs.appendChild(homeTab);
+  tabs.appendChild(menuTab);
+  tabs.appendChild(contactTab);
+
+  return tabs;
+};
+
 const createHeader = () => {
   const header = document.createElement('header');
 
   header.textContent = 'La Abuelita';
+
+  header.appendChild(createTabs());
 
   return header;
 };

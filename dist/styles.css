@@ -81,8 +81,28 @@ header {
   color: var(--font-color);
   background-color: var(--transparent-box-color);
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+  width: 300px;
+  box-sizing: border-box;
+  font-size: 1.5rem;
+}
+
+.tab {
+  height: 100%;
+  cursor: pointer;
+}
+
+.active {
+  border-bottom: 2px solid var(--font-color);
 }
 
 .center {
