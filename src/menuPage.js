@@ -27,6 +27,8 @@ const menuPage = () => {
   const content = document.querySelector('#content');
 
   content.appendChild(createHeader());
+  const menuTab = document.querySelector('#menu');
+  menuTab.classList.add('active');
 
   const centerDiv = document.createElement('div');
   centerDiv.classList.add('menu');
@@ -44,6 +46,7 @@ const menuPage = () => {
   content.appendChild(centerDiv);
   
   content.appendChild(createFooter());
+
   return content;
 };
 

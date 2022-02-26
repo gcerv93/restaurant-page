@@ -102,6 +102,10 @@ header {
   cursor: pointer;
 }
 
+.tab:hover {
+  transform: translateY(-10%);
+}
+
 .active {
   border-bottom: 2px solid var(--font-color);
 }
