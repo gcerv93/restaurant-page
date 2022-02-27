@@ -8,8 +8,10 @@ const contactPage = () => {
 
   const contactInfo = document.createElement('p');
   contactInfo.textContent = 'Contact Us';
+
   const phoneInfo = document.createElement('p');
   phoneInfo.textContent = '012-345-6789';
+
   const emailInfo = document.createElement('p');
   emailInfo.textContent = 'fakeemail@fakeemail.com';
 

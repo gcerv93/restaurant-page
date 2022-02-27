@@ -1,6 +1,7 @@
 import Icon from './images/github.svg';
 
 const createTabs = () => {
+  // seperate div to hold the tabs
   const tabs = document.createElement('div');
   tabs.classList.add('tabs');
 
@@ -8,15 +9,18 @@ const createTabs = () => {
   const menuTab = document.createElement('div');
   const contactTab = document.createElement('div');
 
+  // home tab
   homeTab.textContent = 'Home';
   homeTab.classList.add('tab');
   homeTab.setAttribute('id', 'home');
   homeTab.classList.add('active');
 
+  // menu tab
   menuTab.textContent = 'Menu';
   menuTab.classList.add('tab');
   menuTab.setAttribute('id', 'menu');
 
+  // contact tab
   contactTab.textContent = 'Contact Us';
   contactTab.classList.add('tab');
   contactTab.setAttribute('id', 'contact');
@@ -28,6 +32,7 @@ const createTabs = () => {
   return tabs;
 };
 
+// function for the header, this is only used in index.js
 const createHeader = () => {
   const header = document.createElement('header');
 
@@ -54,6 +59,7 @@ const createCenterDiv = () => {
   return center;
 };
 
+// footer is created in every page
 const createFooter = () => {
   const footer = document.createElement('footer');
 
