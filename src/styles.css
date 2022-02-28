@@ -1,0 +1,221 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Shippori+Antique+B1&display=swap');
+
+:root {
+  --transparent-box-color: rgba(0, 0, 0, 0.8);
+  --font-color: rgb(222, 196, 139);
+  --content-font: 'Shippori Antique B1', sans-serif;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  background-image: url(./images/main-tacos.jpg);
+  background-size: 100% 100%;
+}
+
+#content {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header {
+  width: 100%;
+  height: 20%;
+  font-family: 'Lobster', cursive;
+  font-size: 5rem;
+  color: var(--font-color);
+  background-color: var(--transparent-box-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+  width: 300px;
+  box-sizing: border-box;
+  font-size: 1.5rem;
+}
+
+.tab {
+  height: 100%;
+  cursor: pointer;
+}
+
+.tab:hover {
+  transform: translateY(-10%);
+}
+
+.active {
+  border-bottom: 2px solid var(--font-color);
+}
+
+.center {
+  width: 45%;
+  height: 65%;
+  background-color: var(--transparent-box-color);
+  border: 1px solid var(--font-color);
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.center p {
+  color: var(--font-color);
+  font-size: 1.5rem;
+  font-family: var(--content-font);
+}
+
+footer {
+  width: 100%;
+  height: 4vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--transparent-box-color);
+  color: var(--font-color);
+  font-size: 0.8rem;
+}
+
+footer a {
+  color: var(--font-color);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.menu {
+  background-color: var(--transparent-box-color);
+  border: 1px solid var(--font-color);
+  border-radius: 10px;
+  width: 45%;
+  height: 65%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.menu-item {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  padding-top: 10px;
+}
+
+.menu img {
+  height: 200px;
+  width: 300px;
+  border-radius: 10px;
+  border: 1px solid var(--font-color);
+}
+
+.menu img:hover {
+  height: 210px;
+  width: 310px;
+  cursor: pointer;
+}
+
+.menu p {
+  font-family: var(--content-font);
+  padding-top: 10px;
+  color: var(--font-color);
+}
+
+.center-contact {
+  background-color: var(--transparent-box-color);
+  border: 1px solid var(--font-color);
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 100px;
+  width: 45%;
+  height: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.center-contact p:first-child {
+  font-family: 'Lobster', cursive;
+  color: var(--font-color);
+  font-size: 3rem;
+  text-decoration: underline;
+}
+
+.center-contact p {
+  font-family: var(--content-font);
+  color: var(--font-color);
+  font-size: 1.5rem;
+}

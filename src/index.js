@@ -1,6 +1,7 @@
 import {mainPage, createHeader} from './mainPage.js';
 import menuPage from './menuPage.js';
 import contactPage from './contactPage.js';
+import './styles.css';
 
 (function() {
   // if i don't create the header outside of the page modules, a new header

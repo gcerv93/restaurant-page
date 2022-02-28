@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css2?family=Lobster&family=Shippori+Antique+B1&display=swap);
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -61,7 +62,7 @@ html {
 body {
   height: 100%;
   width: 100%;
-  background-image: url(./images/tacos.jpg);
+  background-image: url(b90b7811a37da84a5cae.jpg);
   background-size: 100% 100%;
 }
 
@@ -217,3 +218,4 @@ footer a:hover {
   color: var(--font-color);
   font-size: 1.5rem;
 }
+
